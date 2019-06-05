@@ -70,7 +70,9 @@
                 android:layout_marginStart="100dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="100dp"
-                android:text="LOGIN" />
+                android:background="@color/colorAccent"
+                android:text="LOGIN"
+                android:textColor="#ffffff"/>
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>

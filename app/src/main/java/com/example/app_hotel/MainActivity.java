@@ -1,5 +1,6 @@
 package com.example.app_hotel;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 new doc_du_lieu().execute("http://192.168.56.1:8080/API_Hotel/login.php");
+
             }
         });
 
@@ -66,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
                     thong_tin_nhan_vien.setGioitinh(json.getString("gioitinh_nguoidung"));
                     thong_tin_nhan_vien.setNgaysinh(json.getString("ngaysinh_nguoidung"));
                     thong_tin_nhan_vien.setChucvu(json.getString("chucvu"));
+                    thong_tin_nhan_vien.setSongaylam(json.getString("songaylam"));
+                    thong_tin_nhan_vien.setLuongcoban(json.getString("luongcoban"));
+                    thong_tin_nhan_vien.setThuong(json.getString("thuong"));
+                    thong_tin_nhan_vien.setCMND(json.getString("CMND"));
+                    thong_tin_nhan_vien.setTongluong(json.getString("tongluong"));
                     Intent mh_trangchu=new Intent(MainActivity.this, trangchuActivity.class);
                     startActivity(mh_trangchu);
                     finish();

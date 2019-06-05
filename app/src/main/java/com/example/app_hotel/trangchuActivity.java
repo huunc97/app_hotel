@@ -1,8 +1,12 @@
 package com.example.app_hotel;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -38,21 +42,22 @@ public class trangchuActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_shop:
                     if(idd!=R.id.navigation_shop) {
-                        toolbar.setTitle("Thông tin nhân viên");
+                       // toolbar.setTitle("Shop");
                         idd=R.id.navigation_shop;
-                        loadFragment(new chitiet_nhanvienActivity());
+                        showDialog();
                     }
                     else
                     {
                         idd=R.id.navigation_shop;
+                        showDialog();
                     }
                     return true;
                 case R.id.navigation_gifts:
                     if(idd!=R.id.navigation_gifts) {
                         idd=R.id.navigation_gifts;
                         loadFragment(new cham_congActivity());
-                        Toast.makeText(trangchuActivity.this,"aaa",Toast.LENGTH_LONG).show();
-                        toolbar.setTitle("My Gifts");
+                        //Toast.makeText(trangchuActivity.this,"aaa",Toast.LENGTH_LONG).show();
+                        toolbar.setTitle("Thống kê lương tháng");
                     }
                     else
                     {
@@ -91,6 +96,27 @@ public class trangchuActivity extends AppCompatActivity {
             return false;
         }
     };
+    public void showDialog() {
+       // dialog = new Dialog(MainActivity.this);
+        AlertDialog.Builder dialog= new AlertDialog.Builder(this);
+        dialog.setTitle("thông báo");
+        dialog.setMessage("Bạn có muốn đăng xuất không ?");
+        dialog.setPositiveButton("Có", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent mh_login=new Intent(trangchuActivity.this, MainActivity.class);
+                startActivity(mh_login);
+                finish();
+            }
+        });
+        dialog.setNegativeButton("Không", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        dialog.show();
+    }
 
     void loadFragment(Fragment fragment)
     {

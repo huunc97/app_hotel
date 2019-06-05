@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cham_congActivity"></activity>
+        <activity android:name=".cham_congActivity" />
         <activity android:name=".chitiet_nhanvienActivity" />
         <activity android:name=".trangchuActivity" />
         <activity android:name=".MainActivity">
