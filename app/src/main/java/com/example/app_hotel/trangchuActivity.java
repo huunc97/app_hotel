@@ -99,7 +99,7 @@ public class trangchuActivity extends AppCompatActivity {
     public void showDialog() {
        // dialog = new Dialog(MainActivity.this);
         AlertDialog.Builder dialog= new AlertDialog.Builder(this);
-        dialog.setTitle("thông báo");
+        dialog.setTitle("Thông báo!");
         dialog.setMessage("Bạn có muốn đăng xuất không ?");
         dialog.setPositiveButton("Có", new DialogInterface.OnClickListener() {
             @Override
