@@ -68,8 +68,8 @@ public class trangchuActivity extends AppCompatActivity {
                 case R.id.navigation_cart:
                     if(idd!=R.id.navigation_cart) {
                         idd=R.id.navigation_cart;
-                        loadFragment(new chitiet_nhanvienActivity());
-                        toolbar.setTitle("Cart");
+                        loadFragment(new Main2Activity());
+                        toolbar.setTitle("Thông tin ca làm");
                         //FragmentA fragmentA=(FragmentA) getFragmentManager().findFragmentById(R.id.)
                     }
                     else
