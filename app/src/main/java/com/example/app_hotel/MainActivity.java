@@ -1,6 +1,7 @@
 package com.example.app_hotel;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -78,7 +79,9 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                     //startActivity(mh_trangchu);
                 }
+                //showDialog();
                 Toast.makeText(MainActivity.this, json.getString("message"), Toast.LENGTH_SHORT).show();
+
 
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -150,5 +153,11 @@ public class MainActivity extends AppCompatActivity {
         } finally {
             connect.disconnect();
         }
+    }
+    public void showDialog() {
+        // dialog = new Dialog(MainActivity.this);
+        AlertDialog.Builder dialog= new AlertDialog.Builder(this);
+        dialog.setMessage("Đăng nhập thất bại!");
+        dialog.show();
     }
 }
