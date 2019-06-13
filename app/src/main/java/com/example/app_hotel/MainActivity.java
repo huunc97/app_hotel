@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         btn_click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new doc_du_lieu().execute("http://192.168.56.1:8080/API_Hotel/login.php");
+                new doc_du_lieu().execute("https://huunc97.000webhostapp.com/api/login.php");
 
             }
         });
