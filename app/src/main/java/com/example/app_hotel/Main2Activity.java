@@ -30,27 +30,85 @@ public class Main2Activity extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
         View view=inflater.inflate(R.layout.activity_main2,container,false);
+        if(thong_tin_nhan_vien.getTen().equals("Nguyễn Chí Hữu")) {
 
             HomeCollection.date_collection_arr = new ArrayList<HomeCollection>();
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-10", "Ca chiều", "12h30-5h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-11", "Ca chiều", "12h30-5h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-12", "Ca sáng", "8h-12h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-13", "Ca sáng", "8h-12h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-14", "Ca sáng", "8h-12h30", "Calendar tuổi"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-15", "Ca chiều", "12h30-17h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-16", "Ca chiều", "12h30-17h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-17", "Ca chiều", "12h30-17h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-18", "Ca chiều", "12h30-17h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-19", "Ca chiều", "12h30-17h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-20", "Ca chiều", "12h30-17h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-21", "Ca chiều", "12h30-17h30", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-22", "Ca tối", "17h30-24h", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-23", "Ca tối", "17h30-24h", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-24", "Ca tối", "17h30-24h", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-25", "Ca tối", "17h30-24h", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-26", "Ca tối", "17h30-24h", "this is holiday"));
-            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-27", "Ca tối", "17h30-24h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-10", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-11", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-12", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-13", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-14", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-15", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-16", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-17", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-18", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-19", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-20", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-21", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-22", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-23", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-24", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-25", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-26", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-27", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-28", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-29", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-30", "Ca tối", "22h-6h", "this is holiday"));
 
+        }
+        else if(thong_tin_nhan_vien.getTen().equals("Quách Vĩ Tuấn")) {
+
+            HomeCollection.date_collection_arr = new ArrayList<HomeCollection>();
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-10", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-11", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-12", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-13", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-14", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-15", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-16", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-17", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-18", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-19", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-20", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-21", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-22", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-23", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-24", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-25", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-26", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-27", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-28", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-29", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-30", "Ca sáng", "6h-14h", "this is holiday"));
+        }
+        else if(thong_tin_nhan_vien.getTen().equals("Nguyễn Thị Nữ")) {
+
+            HomeCollection.date_collection_arr = new ArrayList<HomeCollection>();
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-10", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-11", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-12", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-13", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-14", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-15", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-16", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-17", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-18", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-19", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-20", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-21", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-22", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-23", "Ca chiều", "14h-22h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-24", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-25", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-26", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-27", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-28", "Ca tối", "22h-6h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-29", "Ca sáng", "6h-14h", "this is holiday"));
+            HomeCollection.date_collection_arr.add(new HomeCollection("2019-06-30", "Ca sáng", "6h-14h", "this is holiday"));
+        }
+        else {
+            HomeCollection.date_collection_arr = new ArrayList<HomeCollection>();
+        }
 
 
 
