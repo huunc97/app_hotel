@@ -40,11 +40,8 @@ public class MainActivity extends AppCompatActivity {
         btn_click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
-                new doc_du_lieu().execute(diachi.link+"login.php");
-=======
+                //new doc_du_lieu().execute(diachi.link+"login.php");
                 new doc_du_lieu().execute("https://huunc97.000webhostapp.com/api/login.php");
->>>>>>> 468aa0f12ec27b273ea2d88c019ad2a320b904b1
 
             }
         });
